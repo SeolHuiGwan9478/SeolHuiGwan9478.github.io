@@ -1,5 +1,5 @@
 # Icons on the footer
-rss: true         # Make sure you created a feed.xml with feed.xml layout
+rss:          # Make sure you created a feed.xml with feed.xml layout
 email_address: "shg0102kr@hufs.ac.kr"
 behance:
 bitbucket:
