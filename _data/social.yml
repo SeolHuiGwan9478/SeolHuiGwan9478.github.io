@@ -1,20 +1,20 @@
 # Icons on the footer
 rss: true         # Make sure you created a feed.xml with feed.xml layout
-email_address:    # Full email address, e.g. "sam@example.com"
+email_address: "shg0102kr@hufs.ac.kr"
 behance:
 bitbucket:
 dribbble:
-facebook:
+facebook: "https://www.facebook.com/profile.php?id=100004489717628"
 flickr:
 gitlab:
-github: "sylhare"
+github: "SeolHuiGwan9478"
 instagram:
 keybase:
 linkedin:         # Full URL
 pinterest:
 reddit:
 soundcloud:
-stack_overflow: "https://stackoverflow.com/users/7747942/sylhare?tab=profile"
+stack_overflow: 
 stack_exchange:   # Full URL
 steam:
 tumblr:
