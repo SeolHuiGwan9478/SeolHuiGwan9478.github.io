@@ -49,7 +49,7 @@ class Order(models.Model):
 
 
 | Field Type | Explain |
-|:---:|:---:|
+|:---:|:---|
 | `CharField` | 작은 문자열 또는 큰 문자열을 위한 문자열 필드 |
 | `TextField` | 큰 문자열 필드 |
 | `IntegerField` | 정수 필드 |
