@@ -46,8 +46,10 @@ class Order(models.Model):
 - 각 테이블 간에 연결하기 위해서 특정 테이블에서 필드 중 다른 테이블에서 참조되는 키를 외래키라고 한다.
 
 ## Django Field types
+
+
 | Field Type | Explain |
-|---|:---:|
+|:---:|:---:|
 | `CharField` | 작은 문자열 또는 큰 문자열을 위한 문자열 필드 |
 | `TextField` | 큰 문자열 필드 |
 | `IntegerField` | 정수 필드 |
@@ -60,6 +62,8 @@ class Order(models.Model):
 | `DecimalField` | 소숫점을 갖는 필드 |
 | `AutoField` | 1부터 시작해서 1씩 증가하기 때문에 IntegerFiled라고 봐도 무방함. AutoField로 pk 필드가 자동으로 추가된다. |
 | `DateField` | 날짜의 필드 타입 |
+
+
 
 ```python
 class DateField(auto_now=False, auto_now_add=False, **options)
