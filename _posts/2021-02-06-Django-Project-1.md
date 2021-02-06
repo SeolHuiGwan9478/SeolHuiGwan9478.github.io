@@ -1,0 +1,46 @@
+---
+layout: post
+title: Django Project_1 
+color: rgb(239, 192, 80)
+tags: [Django]
+---
+
+## 프로젝트의 기본 PEP8
+#### Style Guide for Python Code
+[PEP8](https://www.python.org/dev/peps/pep-0008)은 파이썬 코드를 위한 가이드 라인을 의미한다.
+#### 주요 PEP8 사항 (Code lay-out)
+1. 들여쓰기(Indentation)
+- 공백 4칸 권장
+- cf. 파이썬3에서는 space와 tab을 혼용해서 쓸 수 없다.
+2. 한 줄에 최대 79자까지
+3. 최상위 함수와 클래스 정의는 2줄씩 띄워 사용한다.
+4. 클래스 내 메서드는 1줄씩 띄워 사용한다.
+5. import는 항상 소스코드 맨 위에 써야하며, 분리해서 써야한다.
+- Good ex)
+```python
+import sys
+import os
+```
+- Bad ex)
+```python
+import sys, os
+```
+
+## flake 8
+#### flake 8 이란?
+- 파이썬 패키지 중 하나
+- 해당하는 파이썬 파일이나 특정 파이썬 코드의 스타일을 검사해주는 도구
+- 원하는 가이드(코딩 컨벤션)만 설정해서 검사할 수도 있다.
+- `$ pip3 install flake8` 커맨드를 통해 설치할 수 있다.
+#### flake 8 을 설치했으면 사용해보자!
+- ex) `$ flake8 hello.py` 커맨드 사용
+```python
+# hello.py
+def hello():
+    print("Nice to meet you")
+a=1
+b=2
+```
+
+
+

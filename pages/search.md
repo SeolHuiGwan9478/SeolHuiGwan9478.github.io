@@ -1,8 +1,8 @@
 ---
 layout: search
-title: Search
+title: 검색
 permalink: /search/
-subtitle: "What are you looking for ?"
+subtitle: "무엇을 찾고 싶나요 ?"
 feature-img: "assets/img/pexels/search-map.jpeg"
 icon: "fa-search"
 ---
