@@ -44,3 +44,28 @@ class Order(models.Model):
     product_name = models.Foreignkey(Product, on_delete=models.CASCADE)
 ```
 - 각 테이블 간에 연결하기 위해서 특정 테이블에서 필드 중 다른 테이블에서 참조되는 키를 외래키라고 한다.
+
+## Django Field types
+| Field Type | Explain |
+|---|:---:|
+| `CharField` | 작은 문자열 또는 큰 문자열을 위한 문자열 필드 |
+| `TextField` | 큰 문자열 필드 |
+| `IntegerField` | 정수 필드 |
+| `FloatField` | 실수 필드 |
+| `BooleanField` | True/False 필드 |
+| `DateTimeField` | 날짜와 시간을 가지는 필드 |
+| `FileField` | 파일 업로드 필드 |
+| `EmailField` | EmailValidator를 사용해서 값이 유효한 email인지 체크하는 CharField |
+| `ImageField` | 이미지 파일인지 유효성 체크해주며, FileField의 파생 클래스 |
+| `DecimalField` | 소숫점을 갖는 필드 |
+| `AutoField` | 1부터 시작해서 1씩 증가하기 때문에 IntegerFiled라고 봐도 무방함. AutoField로 pk 필드가 자동으로 추가된다. |
+| `DateField` | 날짜의 필드 타입 |
+
+```python
+class DateField(auto_now=False, auto_now_add=False, **options)
+```
+DateTimeField와 DateField 는 매개변수 argument로 auto_now와 auto_now_add를 갖는다. 
+
+
+- auto_now_add: 데이터가 **처음** 생성되어 저장할 때
+- auto_now: 데이터가 저장될 때 **(Update)**
