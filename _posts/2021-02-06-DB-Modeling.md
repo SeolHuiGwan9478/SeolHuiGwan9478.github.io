@@ -17,14 +17,30 @@ tags: [Django]
 ## 모델링 설계하는 방법
 1) 어떤 필드가 필요한지 생각한다.
 2) 각 필드는 어떤 타입이어야 하는지 생각한다.
-Ex1) 주문(Order) 모델링
-- 주문번호 
-- 고객-고객 번호 
-- 총 금액
-- 주문 상태
-Ex2) 포스트(Post) 모델링
+
+
+Ex) 포스트(Post) 모델링
+
+
 - 글 번호 `pk`
 - 유저-글쓴이번호 `relation-pk`
 - 글 내용 `TextField`
 - 글 쓴 날짜 `DateTimeField`
 - 글 수정한 날짜 `DateTimeField`
+
+## Primary Key(기본키, pk)
+- [PK](https://docs.djangoproject.com/en/3.1/topics/db/models/)는 테이블에 저장된 각각의 데이터를 구분하는 키
+- 데이터베이스(DB) 테이블에 각 행의 식별 기준인 기본키가 필요하다.
+- Django 에는 기본키로 id가 디폴트로 지정된다. 
+```python
+id = models.AutoField(primary_key=True)
+```
+`만약 따로 pk를 설정하고 싶다면 필드에 primary_key=True 를 넣어주면 된다. 이 경우에 id는 자동으로 생성되지 않는다.`
+
+## Foreignkey
+```python
+class Order(models.Model):
+    total_price = models.IntergerField(verbose_name="총 가격")
+    product_name = models.Foreignkey(Product, on_delete=models.CASCADE)
+```
+- 각 테이블 간에 연결하기 위해서 특정 테이블에서 필드 중 다른 테이블에서 참조되는 키를 외래키라고 한다.
