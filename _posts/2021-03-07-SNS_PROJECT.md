@@ -2,8 +2,9 @@
 layout: post
 title: Making SNS PAGE by using Django
 color: rgb(204, 153, 255)
-tags: [Django], [Project]
+tags: [Django]
 ---
+
 ## Social NetWork Service(SNS) Web
 ![image](https://user-images.githubusercontent.com/67581495/113472710-01c07380-94a0-11eb-8f2e-19baa8877339.png)
 ![image](https://user-images.githubusercontent.com/67581495/113472738-287eaa00-94a0-11eb-9dda-4a82659a1f86.png)
